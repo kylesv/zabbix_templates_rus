@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>2.0</version>
+    <date>2015-02-03T12:08:40Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+        <group>
+            <name>Templates Networks</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template ICMP Ping 2</template>
+            <name>Template ICMP Ping 2</name>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+                <group>
+                    <name>Templates Networks</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>03 Состояние узла сети</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Мегафон: ICMP время отклика</name>
+                    <type>3</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>icmppingsec[{$IP_MF},10]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>s</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>03 Состояние узла сети</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Мегафон: ICMP потери</name>
+                    <type>3</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>icmppingloss[{$IP_MF},10]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>%</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>03 Состояние узла сети</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Мегафон: состояние канала</name>
+                    <type>3</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>icmpping[{$IP_MF},10]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>03 Состояние узла сети</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>Service state</name>
+                    </valuemap>
+                </item>
+                <item>
+                    <name>Ростелеком: ICMP время отклика</name>
+                    <type>3</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>icmppingsec[{$IP_RT},10]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>s</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>03 Состояние узла сети</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Ростелеком: ICMP потери</name>
+                    <type>3</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>icmppingloss[{$IP_RT},10]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>%</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>03 Состояние узла сети</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Ростелеком: состояние канала</name>
+                    <type>3</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>icmpping[{$IP_RT},10]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>03 Состояние узла сети</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>Service state</name>
+                    </valuemap>
+                </item>
+            </items>
+            <discovery_rules/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template ICMP Ping 2:icmppingloss[{$IP_MF},10].avg(1200)}&gt;40</expression>
+            <name>Высокие потери ICMP пакетов по каналу Мегафон: {$IP_MF}</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Недоступен по сети (Ростелеком:{$IP_RT}, Мегафон:{$IP_MF})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1 &amp; {Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+                </dependency>
+                <dependency>
+                    <name>Устройство недоступно по каналу Мегафон ({$IP_MF})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template ICMP Ping 2:icmppingloss[{$IP_RT},10].avg(1200)}&gt;40</expression>
+            <name>Высокие потери ICMP пакетов по каналу Ростелеком: {$IP_RT}</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Устройство недоступно по каналу Ростелеком ({$IP_RT})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1</expression>
+                </dependency>
+                <dependency>
+                    <name>Недоступен по сети (Ростелеком:{$IP_RT}, Мегафон:{$IP_MF})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1 &amp; {Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template ICMP Ping 2:icmppingsec[{$IP_MF},10].avg(1200)}&gt;0.7</expression>
+            <name>Высокое время отклика по каналу Мегафон: {$IP_MF}</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Высокие потери ICMP пакетов по каналу Мегафон: {$IP_MF}</name>
+                    <expression>{Template ICMP Ping 2:icmppingloss[{$IP_MF},10].avg(1200)}&gt;40</expression>
+                </dependency>
+                <dependency>
+                    <name>Недоступен по сети (Ростелеком:{$IP_RT}, Мегафон:{$IP_MF})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1 &amp; {Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+                </dependency>
+                <dependency>
+                    <name>Устройство недоступно по каналу Мегафон ({$IP_MF})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template ICMP Ping 2:icmppingsec[{$IP_RT},10].avg(1200)}&gt;0.7</expression>
+            <name>Высокое время отклика по каналу Ростелеком: {$IP_RT}</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Устройство недоступно по каналу Ростелеком ({$IP_RT})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1</expression>
+                </dependency>
+                <dependency>
+                    <name>Недоступен по сети (Ростелеком:{$IP_RT}, Мегафон:{$IP_MF})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1 &amp; {Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+                </dependency>
+                <dependency>
+                    <name>Высокие потери ICMP пакетов по каналу Ростелеком: {$IP_RT}</name>
+                    <expression>{Template ICMP Ping 2:icmppingloss[{$IP_RT},10].avg(1200)}&gt;40</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1 &amp; {Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+            <name>Недоступен по сети (Ростелеком:{$IP_RT}, Мегафон:{$IP_MF})</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+            <name>Устройство недоступно по каналу Мегафон ({$IP_MF})</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Недоступен по сети (Ростелеком:{$IP_RT}, Мегафон:{$IP_MF})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1 &amp; {Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1</expression>
+            <name>Устройство недоступно по каналу Ростелеком ({$IP_RT})</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Недоступен по сети (Ростелеком:{$IP_RT}, Мегафон:{$IP_MF})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1 &amp; {Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+    </triggers>
+</zabbix_export>

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>2.0</version>
+    <date>2015-02-03T11:47:34Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+        <group>
+            <name>Templates Networks</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template SNMP General 1 channel</template>
+            <name>Template SNMP General 1 channel</name>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+                <group>
+                    <name>Templates Networks</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>00 Основные</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Время работы</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>1</multiplier>
+                    <snmp_oid>1.3.6.1.2.1.1.3.0</snmp_oid>
+                    <key>sysUpTimeInstance</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>30</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>s</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>0.01</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>00 Основные</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Имя</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.2.1.1.5.0</snmp_oid>
+                    <key>sysName</key>
+                    <delay>86400</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>1</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Административное имя, назначенное для управляемого узла. По Конвенции, это узел, полностью определенное доменное имя. Если имя неизвестно, то значение является строкой нулевой длины.</description>
+                    <inventory_link>3</inventory_link>
+                    <applications>
+                        <application>
+                            <name>00 Основные</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Контакты</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.2.1.1.4.0</snmp_oid>
+                    <key>sysContact</key>
+                    <delay>86400</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>1</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Контактное лицо для управляемого узла, вместе с информацией о том, как связаться с этим человеком. Если нет контактная информация известна, то значение является строкой нулевой длины.</description>
+                    <inventory_link>23</inventory_link>
+                    <applications>
+                        <application>
+                            <name>00 Основные</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Описание устройства</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.2.1.1.1.0</snmp_oid>
+                    <key>sysDescr</key>
+                    <delay>86400</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>1</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Это значение должно включать полное наименование и идентификация версии системы типа оборудования, программного обеспечения, операционной системы и сетевого программного обеспечения.</description>
+                    <inventory_link>14</inventory_link>
+                    <applications>
+                        <application>
+                            <name>00 Основные</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Расположение</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.2.1.1.6.0</snmp_oid>
+                    <key>sysLocation</key>
+                    <delay>86400</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>1</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Физическое расположение этого узла. Если местонахождение неизвестно, то значение является строкой нулевой длины.</description>
+                    <inventory_link>24</inventory_link>
+                    <applications>
+                        <application>
+                            <name>00 Основные</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+        <template>
+            <template>Template SNMP General 2 channels</template>
+            <name>Template SNMP General 2 channels</name>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+                <group>
+                    <name>Templates Networks</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>00 Основные</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Время работы</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>1</multiplier>
+                    <snmp_oid>1.3.6.1.2.1.1.3.0</snmp_oid>
+                    <key>sysUpTimeInstance</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>30</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>s</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>0.01</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port>161</port>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>00 Основные</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Имя</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.2.1.1.5.0</snmp_oid>
+                    <key>sysName</key>
+                    <delay>86400</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>1</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Административное имя, назначенное для управляемого узла. По Конвенции, это узел, полностью определенное доменное имя. Если имя неизвестно, то значение является строкой нулевой длины.</description>
+                    <inventory_link>3</inventory_link>
+                    <applications>
+                        <application>
+                            <name>00 Основные</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Контакты</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.2.1.1.4.0</snmp_oid>
+                    <key>sysContact</key>
+                    <delay>86400</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>1</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Контактное лицо для управляемого узла, вместе с информацией о том, как связаться с этим человеком. Если нет контактная информация известна, то значение является строкой нулевой длины.</description>
+                    <inventory_link>23</inventory_link>
+                    <applications>
+                        <application>
+                            <name>00 Основные</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Описание устройства</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.2.1.1.1.0</snmp_oid>
+                    <key>sysDescr</key>
+                    <delay>86400</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>1</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Это значение должно включать полное наименование и идентификация версии системы типа оборудования, программного обеспечения, операционной системы и сетевого программного обеспечения.</description>
+                    <inventory_link>14</inventory_link>
+                    <applications>
+                        <application>
+                            <name>00 Основные</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Расположение</name>
+                    <type>1</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.2.1.1.6.0</snmp_oid>
+                    <key>sysLocation</key>
+                    <delay>86400</delay>
+                    <history>30</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>1</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Физическое расположение этого узла. Если местонахождение неизвестно, то значение является строкой нулевой длины.</description>
+                    <inventory_link>24</inventory_link>
+                    <applications>
+                        <application>
+                            <name>00 Основные</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template SNMP General 2 channels:sysUpTimeInstance.nodata(3600)}=1 &amp; {Template ICMP Ping 2:icmpping[{$IP_MF},10].min(#60)}=1 &amp; {Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#60)}&lt;1</expression>
+            <name>Необходимо переключить интерфейс SNMP по умолчанию</name>
+            <url/>
+            <status>0</status>
+            <priority>0</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Недоступен по сети (Ростелеком:{$IP_RT}, Мегафон:{$IP_MF})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1 &amp; {Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP General 1 channel:sysUpTimeInstance.nodata(3600)}=1</expression>
+            <name>Нет данных по протоколу SNMP</name>
+            <url/>
+            <status>0</status>
+            <priority>1</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Недоступен по сети ({HOST.IP})</name>
+                    <expression>{Template ICMP Ping 1:icmpping[,10].max(#5)}&lt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP General 2 channels:sysUpTimeInstance.nodata(3600)}=1</expression>
+            <name>Нет данных по протоколу SNMP</name>
+            <url/>
+            <status>0</status>
+            <priority>1</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Необходимо переключить интерфейс SNMP по умолчанию</name>
+                    <expression>{Template SNMP General 2 channels:sysUpTimeInstance.nodata(3600)}=1 &amp; {Template ICMP Ping 2:icmpping[{$IP_MF},10].min(#60)}=1 &amp; {Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#60)}&lt;1</expression>
+                </dependency>
+                <dependency>
+                    <name>Недоступен по сети (Ростелеком:{$IP_RT}, Мегафон:{$IP_MF})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1 &amp; {Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP General 1 channel:sysUpTimeInstance.last(0)}&lt;1200</expression>
+            <name>Устройство было перезагружено</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Недоступен по сети ({HOST.IP})</name>
+                    <expression>{Template ICMP Ping 1:icmpping[,10].max(#5)}&lt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP General 2 channels:sysUpTimeInstance.last()}&lt;1200</expression>
+            <name>Устройство было перезагружено</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>Недоступен по сети (Ростелеком:{$IP_RT}, Мегафон:{$IP_MF})</name>
+                    <expression>{Template ICMP Ping 2:icmpping[{$IP_RT},10].max(#5)}&lt;1 &amp; {Template ICMP Ping 2:icmpping[{$IP_MF},10].max(#5)}&lt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+    </triggers>
+</zabbix_export>
