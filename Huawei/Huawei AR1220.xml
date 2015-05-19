@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2015-02-03T12:07:23Z</date>
+    <date>2015-05-19T09:25:43Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -12,8 +12,9 @@
     </groups>
     <templates>
         <template>
-            <template>Template ICMP Ping 1</template>
-            <name>Template ICMP Ping 1</name>
+            <template>Template Huawei AR1220</template>
+            <name>Template Huawei AR1220</name>
+            <description/>
             <groups>
                 <group>
                     <name>Templates</name>
@@ -24,64 +25,25 @@
             </groups>
             <applications>
                 <application>
-                    <name>03 Состояние узла сети</name>
+                    <name>01 Системные</name>
+                </application>
+                <application>
+                    <name>02 Шасси</name>
                 </application>
             </applications>
             <items>
                 <item>
-                    <name>ICMP время отклика</name>
-                    <type>3</type>
-                    <snmp_community/>
+                    <name>CPU нагрузка</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>icmppingsec[,10]</key>
+                    <snmp_oid>1.3.6.1.4.1.2011.5.25.31.1.1.1.1.5.9</snmp_oid>
+                    <key>hwEntityCpuUsage</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>s</units>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>03 Состояние узла сети</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                </item>
-                <item>
-                    <name>ICMP потери</name>
-                    <type>3</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>icmppingloss[,10]</key>
-                    <delay>60</delay>
-                    <history>7</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
+                    <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
@@ -107,25 +69,26 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>03 Состояние узла сети</name>
+                            <name>01 Системные</name>
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
-                    <name>Состояние узла</name>
-                    <type>3</type>
-                    <snmp_community/>
+                    <name>Использовано памяти</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                     <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>icmpping[,10]</key>
+                    <snmp_oid>1.3.6.1.4.1.2011.5.25.31.1.1.1.1.7.9</snmp_oid>
+                    <key>hwEntityMemUsage</key>
                     <delay>60</delay>
                     <history>7</history>
                     <trends>365</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
-                    <units/>
+                    <units>%</units>
                     <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
@@ -149,61 +112,83 @@
                     <inventory_link>0</inventory_link>
                     <applications>
                         <application>
-                            <name>03 Состояние узла сети</name>
+                            <name>01 Системные</name>
                         </application>
                     </applications>
-                    <valuemap>
-                        <name>Service state</name>
-                    </valuemap>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Температура</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>1.3.6.1.4.1.2011.5.25.31.1.1.1.1.11.9</snmp_oid>
+                    <key>hwEntityTemperature</key>
+                    <delay>180</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°C</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>02 Шасси</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
                 </item>
             </items>
             <discovery_rules/>
             <macros/>
-            <templates/>
+            <templates>
+                <template>
+                    <name>Template Interfaces Discover</name>
+                </template>
+            </templates>
             <screens/>
         </template>
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template ICMP Ping 1:icmppingloss[,10].avg(1200)}&gt;40</expression>
-            <name>Высокие потери ICMP пакетов ({HOST.IP})</name>
+            <expression>{Template Huawei AR1220:hwEntityCpuUsage.avg(300)}&gt;75</expression>
+            <name>CPU нагрузка за 5 минут больше 75%</name>
             <url/>
             <status>0</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <dependencies>
-                <dependency>
-                    <name>Недоступен по сети ({HOST.IP})</name>
-                    <expression>{Template ICMP Ping 1:icmpping[,10].max(#5)}&lt;1</expression>
-                </dependency>
-            </dependencies>
+            <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template ICMP Ping 1:icmppingsec[,10].avg(1200)}&gt;0.7</expression>
-            <name>Высокое время отклика устройства ({HOST.IP})</name>
+            <expression>{Template Huawei AR1220:hwEntityMemUsage.avg(120)}&gt;95</expression>
+            <name>Свободной памяти меньше 5 %</name>
             <url/>
             <status>0</status>
-            <priority>2</priority>
-            <description/>
-            <type>0</type>
-            <dependencies>
-                <dependency>
-                    <name>Недоступен по сети ({HOST.IP})</name>
-                    <expression>{Template ICMP Ping 1:icmpping[,10].max(#5)}&lt;1</expression>
-                </dependency>
-                <dependency>
-                    <name>Высокие потери ICMP пакетов ({HOST.IP})</name>
-                    <expression>{Template ICMP Ping 1:icmppingloss[,10].avg(1200)}&gt;40</expression>
-                </dependency>
-            </dependencies>
-        </trigger>
-        <trigger>
-            <expression>{Template ICMP Ping 1:icmpping[,10].max(#5)}&lt;1</expression>
-            <name>Недоступен по сети ({HOST.IP})</name>
-            <url/>
-            <status>0</status>
-            <priority>4</priority>
+            <priority>3</priority>
             <description/>
             <type>0</type>
             <dependencies/>
