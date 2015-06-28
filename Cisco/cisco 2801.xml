@@ -584,7 +584,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template Cisco 2801:ciscoEnvMonFanState.1.last(120)}&lt;&gt;1</expression>
+            <expression>{Template Cisco 2801:ciscoEnvMonFanState.1.last(120)}#1</expression>
             <name>Состояние вентилятора 1: не в норме</name>
             <url/>
             <status>0</status>
@@ -594,7 +594,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template Cisco 2801:ciscoEnvMonFanState.2.last(120)}&lt;&gt;1</expression>
+            <expression>{Template Cisco 2801:ciscoEnvMonFanState.2.last(120)}#1</expression>
             <name>Состояние вентилятора 2: не в норме</name>
             <url/>
             <status>0</status>
@@ -604,7 +604,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template Cisco 2801:ciscoEnvMonFanState.3.last(120)}&lt;&gt;1</expression>
+            <expression>{Template Cisco 2801:ciscoEnvMonFanState.3.last(120)}#1</expression>
             <name>Состояние вентилятора 3: не в норме</name>
             <url/>
             <status>0</status>
