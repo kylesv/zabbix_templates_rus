@@ -485,7 +485,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{Template Cisco 2650:ciscoEnvMonSupplyState.1.last(120)}&lt;&gt;1</expression>
+            <expression>{Template Cisco 2650:ciscoEnvMonSupplyState.1.last(120)}#1</expression>
             <name>Источник питания не в норме</name>
             <url/>
             <status>0</status>
